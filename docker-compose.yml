@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  test_postgredb:
+    image: postgres:latest
+    ports:
+      - "5430:5430"
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=root
